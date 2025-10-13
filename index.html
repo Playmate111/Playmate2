@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+    .results-carousel
+    .item img { width: 512px; height: 512px; }
+    .paper-button {
+      padding-right: 16px;
+      border-radius: 8px;
+      color: #fff;
+      background-color: rgba(128,128,128,0.3);
+      cursor: pointer;
+      transition: background-color 0.5s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .paper-button .icon {
+      box-sizing: content-box;
+      padding: 8px;
+      background-color: rgba(255,255,255,0.7);
+      margin-right: 16px;
+      transition: background-color 0.5s;
+    }
+
+    .paper-button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+    .paper-button:hover .icon {
+      background-color: #fff;
+    }
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Training-Free Multi-Character Audio-Driven Animation via Diffusion Transformer with Reward Feedback">
+  <meta name="keywords" content="Video Generation, Camera Motion transfer, Camera-Object Motion, Disentanglement">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title style="color: white;">Training-Free Multi-Character Audio-Driven Animation via Diffusion Transformer with Reward Feedback</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+ 
+
+
+ 
+<body style="background-color: black;">
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h2 class="title is-1 publication-title" style="color: white;font-size: 2.5rem;">Training-Free Multi-Character Audio-Driven Animation via
+                Diffusion Transformer with Reward Feedback</h1>
+            
+ 
+  
+  
+            <div class="column has-text-centered">
+              <div class="publication-links">
+ 
+ 
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 单独放视频部分 -->
+<section class="teaser1-section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <style>
+          .videos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+          }
+          .videos-container-top .video-item {
+            flex: 0 0 100%;
+            max-width: 80%;
+            box-sizing: border-box;
+          }
+          .video-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background-color: #000;
+            display: block;
+          }
+        </style>
+        <div class="videos-container videos-container-top">
+          <div class="video-item">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/cover/cover.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- 在Abstract部分插入视频 -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+	
+		  
+		<!-- 加个间距 -->
+        <div style="height: 100px;"></div>
+
+             
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="color: white;">Abstract</h2>
+	 <div style="height: 20px;"></div>
+		<!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+
+        <p style="color: white;">
+        </p>
+
+        <!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+	<div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full">
+		 <style>
+          .videos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+          }
+          .videos-container-top .video-item {
+            flex: 0 0 100%;
+            max-width: 80%;
+            box-sizing: border-box;
+          }
+          .video-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background-color: #000;
+            display: block;
+          }
+        </style>
+          <div class="videos-container videos-container-top">
+            <div class="video-item">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/multi_persons/1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div style="height: 20px;"></div>
+	 <div class="columns is-centered" >
+          <p style="color: white;">
+            This video is generated by our model
+          </p>
+        </div>
+		
+	 <div style="height: 20px;"></div>
+		<!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+
+        <p style="color: white;">
+        </p>
+ 
+		
+        <div class="content has-text-justified">
+          <p style="color: white;">
+            Recent advances in diffusion models have significantly improved audio-driven human video generation, surpassing traditional methods in both quality and controllability. However, existing approaches still face challenges in lip-sync accuracy, temporal coherence for long video generation, and multi-character animation. In this work, we propose a diffusion transformer (DiT)-based framework for generating lifelike talking videos of arbitrary length, and introduce a training-free method for multi-character audio-driven animation. First, we employ a LoRA-based training strategy combined with a position shift inference approach, which enables efficient long video generation while preserving the capabilities of the foundation model. Moreover, we combine partial parameter updates with reward feedback to enhance both lip synchronization and natural body motion. Finally, we propose a training-free approach, Mask Classifier-Free Guidance (Mask-CFG), for multi-character animation, which requires no specialized datasets or model modifications and supports audio-driven animation for three or more characters. Experimental results demonstrate that our method outperforms existing state-of-the-art approaches, achieving high-quality, temporally coherent, and multi-character audio-driven video generation in a simple, efficient, and cost-effective manner.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="color: white;">Method Framework</h2>
+        <div class="has-text-centered" style="margin-top: 2em;">
+          <figure class="image" style="display: block; position: relative; width: 100%; overflow: visible;">
+            <img src="./static/fig/method.jpg" alt="Descriptive alt text"
+                 style="width: 140%; max-width: 900px; position: relative; left: 50%; transform: translateX(-50%);">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Multi-Character Animation部分 -->
+  <section class="demo1-section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+	
+        <div class="column is-full">
+		  <!-- 加个间距 -->
+        <div style="height: 100px;"></div>
+		
+          <div class="has-text-centered">
+            <h2 class="title is-4" style="color: white;">Multi-Character Animation</h2>
+          </div>
+		  
+		 <!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+
+        <p style="color: white;">
+        </p>
+
+        <!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+
+	
+          
+          <!-- 第一行2个视频 -->
+          <div class="videos-container" style="flex-wrap: nowrap;">
+            <div class="video-item" style="flex: 0 0 calc(50% - 5px); min-width: calc(50% - 5px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/multi_persons/multi_persons_09-multiperson_30.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item" style="flex: 0 0 calc(50% - 5px); min-width: calc(50% - 5px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/multi_persons/multi_persons_13-multiperson_31.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <!-- 第二行3个视频 -->
+          <div class="videos-container" style="flex-wrap: nowrap;">
+            <div class="video-item" style="flex: 0 0 calc(33.33% - 7px); min-width: calc(33.33% - 7px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/multi_persons/multi_persons_18-multiperson_36.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item" style="flex: 0 0 calc(33.33% - 7px); min-width: calc(33.33% - 7px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/multi_persons/multi_persons_17-multiperson_26.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item" style="flex: 0 0 calc(33.33% - 7px); min-width: calc(33.33% - 7px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/multi_persons/multi_persons_11-multiperson_09.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <!-- 第三行4个视频 -->
+          <div class="videos-container" style="flex-wrap: nowrap;">
+            <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/multi_persons/multi_persons_12-multiperson_14.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/multi_persons/multi_persons_19-multiperson_03.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/multi_persons/multi_persons_04-multiperson_13.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/multi_persons/male_song_02-multiperson_21.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sing Song Animation部分 -->
+  <section class="demo2-section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+			  <!-- 加个间距 -->
+        <div style="height: 100px;"></div>
+		
+          <div class="has-text-centered">
+            <h2 class="title is-4" style="color: white;">Singing</h2>
+          </div>
+          
+		  <!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+
+        <p style="color: white;">
+        </p>
+
+        <!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+		
+          <!-- 单行4个视频 -->
+          <div class="videos-container" style="flex-wrap: nowrap;">
+            <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/song/male_song_01-male_36.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/song/female_song_01-female_55.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/song/female_song_04-female_58.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+              <video autoplay controls muted loop playsinline>
+                <source src="./static/song/female_song_03-female_59.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- One-Charactor Animation部分 -->
+<section class="demo3-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+	  	  <!-- 加个间距 -->
+        <div style="height: 100px;"></div>
+		
+        <div class="has-text-centered">
+          <h2 class="title is-4" style="color: white;">One-Character Animation</h2>
+        </div>
+          <!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+
+        <p style="color: white;">
+        </p>
+
+        <!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+
+	
+ 
+		
+        <!-- 第一行3个视频 -->
+        <div class="videos-container" style="flex-wrap: nowrap;">
+          <div class="video-item" style="flex: 0 0 calc(33.33% - 7px); min-width: calc(33.33% - 7px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/female_01-female_36.mp4" type="video/mp4">
+            </video>
+          </div>
+         <div class="video-item" style="flex: 0 0 calc(33.33% - 7px); min-width: calc(33.33% - 7px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/male_10-male_11.mp4" type="video/mp4">
+            </video>
+          </div>
+         <div class="video-item" style="flex: 0 0 calc(33.33% - 7px); min-width: calc(33.33% - 7px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/female_06-female_35.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- 第二行4个视频 -->
+         <div class="videos-container" style="flex-wrap: nowrap;">
+          <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/male_06-male_09.mp4" type="video/mp4">
+            </video>
+          </div>
+         <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/female_04-female_25.mp4" type="video/mp4">
+            </video>
+          </div>
+         <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/female_03-female_07.mp4" type="video/mp4">
+            </video>
+          </div>
+        <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/male_11-male_26.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- 第三行4个视频 -->
+       <div class="videos-container" style="flex-wrap: nowrap;">
+         <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/female_05-female_43.mp4" type="video/mp4">
+            </video>
+          </div>
+        <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/female_09-female_38.mp4" type="video/mp4">
+            </video>
+          </div>
+        <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/female_01-female_29.mp4" type="video/mp4">
+            </video>
+          </div>
+         <div class="video-item" style="flex: 0 0 calc(25% - 8px); min-width: calc(25% - 8px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/male_03-male_15.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        
+        <!-- 第四行3个视频 -->
+       <div class="videos-container" style="flex-wrap: nowrap;">
+          <div class="video-item" style="flex: 0 0 calc(33.33% - 7px); min-width: calc(33.33% - 7px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/male_07-male_33.mp4" type="video/mp4">
+            </video>
+          </div>
+       <div class="video-item" style="flex: 0 0 calc(33.33% - 7px); min-width: calc(33.33% - 7px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/male_12-male_21.mp4" type="video/mp4">
+            </video>
+          </div>
+           <div class="video-item" style="flex: 0 0 calc(33.33% - 7px); min-width: calc(33.33% - 7px);">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/One_Charactor/male_04-male_34.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Multi-Style Animation部分 -->
+<section class="demo4-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+	  	  <!-- 加个间距 -->
+        <div style="height: 100px;"></div>
+		
+        <div class="has-text-centered">
+          <h2 class="title is-4" style="color: white;">Multi-Style Animation</h2>
+        </div>
+        <div style="height: 20px;"></div>
+		<!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+
+        <p style="color: white;">
+        </p>
+
+        <!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+		
+		<style>
+          .videos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+          }
+          .videos-container.row1 .video-item {
+           flex: 0 0 calc(33.33% - 7px);
+            max-width: calc(33.33% - 7px);
+          }
+          .videos-container.row2 .video-item {
+           flex: 0 0 calc(50% - 5px);
+            max-width: calc(50% - 5px);
+          }
+  
+          .video-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background-color: #000;
+          }
+        </style>
+		
+        <!-- 第一行3个视频 -->
+        <div class="videos-container row1">
+          <div class="video-item">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/animal/male_13-male_37.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-item">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/animal/male_08-male_31.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-item">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/animal/male_09-male_35.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- 第二行2个视频 -->
+        <div class="videos-container row1">
+          <div class="video-item">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/animal/male_05-animal_01.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-item">
+            <video autoplay controls muted loop playsinline>
+              <source src="./static/animal/male_04-male_03.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo4-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+	  	  <!-- 加个间距 -->
+        <div style="height: 100px;"></div>
+		
+        <div class="has-text-centered">
+          <h2 class="title is-4" style="color: white;">Methods Comparsion</h2>
+        </div>
+        <div style="height: 20px;"></div>
+		<!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+
+        <p style="color: white;">
+        </p>
+
+        <!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+		
+    
+    <!-- 三行视频 -->
+    <div style="margin: 20px 0;">
+	  <div class="content has-text-justified">
+          <p style="color: white;">
+            Due to the inability of Hallo3 to support full-body animation, its corresponding result has consequently been removed from the comparison.
+          </p>
+        </div>
+		
+        <!-- 第一行视频 -->
+        <div class="videos-container" style="flex-wrap: nowrap; margin-bottom: 20px;">
+            <div class="video-item" style="flex: 0 0 100%; min-width: 100%;">
+                <video controls muted loop playsinline style="width: 100%;">
+                    <source src="./static/compare/sonic_fantasy_hunyuan_multitalk_omniavatar_ours_03.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+         <!-- 底部标签 sonic_hallo3_fantasy_hunyuan_multitalk_omniavatar_ours_01 --> 
+    <div style="display: flex; justify-content: space-between; margin-top: 0px;">
+        <div style="flex: 1; text-align: center; color: white;">sonic</div>		
+        <div style="flex: 1; text-align: center; color: white;">fantasy</div>
+        <div style="flex: 1; text-align: center; color: white;">hunyuan</div>
+        <div style="flex: 1; text-align: center; color: white;">multitalk</div>
+        <div style="flex: 1; text-align: center; color: white;">omniavatar</div>
+        <div style="flex: 1; text-align: center; color: white;">ours</div>
+    </div>
+	  <!-- 加个间距 -->
+        <div style="height: 20px;"></div>
+		
+		
+        <!-- 第二行视频 -->
+        <div class="videos-container" style="flex-wrap: nowrap; margin-bottom: 20px;">
+            <div class="video-item" style="flex: 0 0 100%; min-width: 100%;">
+                <video controls muted loop playsinline style="width: 100%;">
+                    <source src="./static/compare/sonic_hallo3_fantasy_hunyuan_multitalk_omniavatar_ours_01.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        
+        <!-- 第三行视频 -->
+        <div class="videos-container" style="flex-wrap: nowrap; margin-bottom: 20px;">
+            <div class="video-item" style="flex: 0 0 100%; min-width: 100%;">
+                <video controls muted loop playsinline style="width: 100%;">
+                    <source src="./static/compare/sonic_hallo3_fantasy_hunyuan_multitalk_omniavatar_ours_02.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+		
+		        <!-- 第三行视频 -->
+        <div class="videos-container" style="flex-wrap: nowrap; margin-bottom: 20px;">
+            <div class="video-item" style="flex: 0 0 100%; min-width: 100%;">
+                <video controls muted loop playsinline style="width: 100%;">
+                    <source src="./static/compare/female_01-female_36_compare.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+		
+		    <div class="videos-container" style="flex-wrap: nowrap; margin-bottom: 20px;">
+            <div class="video-item" style="flex: 0 0 100%; min-width: 100%;">
+                <video controls muted loop playsinline style="width: 100%;">
+                    <source src="./static/compare/male_12-male_21_compare.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+		
+    </div>
+    
+    <!-- 底部标签 sonic_hallo3_fantasy_hunyuan_multitalk_omniavatar_ours_01 --> 
+    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <div style="flex: 1; text-align: center; color: white;">sonic</div>
+		<div style="flex: 1; text-align: center; color: white;">hallo3</div>
+        <div style="flex: 1; text-align: center; color: white;">fantasy</div>
+        <div style="flex: 1; text-align: center; color: white;">hunyuan</div>
+        <div style="flex: 1; text-align: center; color: white;">multitalk</div>
+        <div style="flex: 1; text-align: center; color: white;">omniavatar</div>
+        <div style="flex: 1; text-align: center; color: white;">ours</div>
+    </div>
+	</div>
+   </div>
+   </div>
+</section>
+
+<!-- 单独放视频部分 -->
+<section class="teaser-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <style class="video-style1">
+          .videos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+          }
+
+          .videos-container-3x2 .video-item {
+            flex: 0 0 calc(33.333% - 7px);
+            box-sizing: border-box;
+          }
+
+          .video-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background-color: #000;
+          }
+        </style>
+
+        <div class="videos-container videos-container-3x2">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+
+<style>
+.bibtex-title {
+  color: #fff !important;
+}
+.bibtex-block {
+  background: #111 !important;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 1em;
+  font-size: 1em;
+  overflow-x: auto;
+}
+.bibtex-block code {
+  background: none !important;
+  color: inherit !important;
+}
+</style>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
