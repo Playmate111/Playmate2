@@ -130,7 +130,7 @@ Explore [more examples](https://playmate111.github.io/Playmate2/).
 
 [//]: # (- **`2025/04/28`**: ✨✨✨ Created a GitHub repository for the project.)
 
-[//]: # (- **`2025/02/11`**: 🚀🚀🚀 Our [paper]&#40;https://arxiv.org/abs/2502.07203&#41; is in public on arxiv.)
+- **`2025/10/15`**: 🚀🚀🚀 Our [paper](https://arxiv.org/abs/2510.12089) is in public on arxiv.
 
 
 ## 📑 Todo List
