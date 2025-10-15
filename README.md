@@ -21,7 +21,7 @@ Guangzhou Quwan Network Technology
 <br>
 
 <div align="center">
-  <a href='https://arxiv.org'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+  <a href='https://arxiv.org/abs/2510.12089'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
   <a href='https://playmate111.github.io/Playmate2/'><img src='https://img.shields.io/badge/Project-HomePage-Green'></a>
 </div>
 
