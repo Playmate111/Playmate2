@@ -38,6 +38,13 @@ Guangzhou Quwan Network Technology
   <img src="assets/framework.jpg">
 </p>
 
+
+## 📰 News
+
+- **`2025/11/10`**: 🎉🎉🎉 Our [paper](https://arxiv.org/abs/2510.12089) has been accepted and will be presented at [AAAI 2026](https://aaai.org/conference/aaai/aaai-26/). We plan to release the inference code and model weights for both [**Playmate**](https://github.com/Playmate111/Playmate) and [**Playmate2**](https://github.com/Playmate111/Playmate2) in the coming weeks. Stay tuned and thank you for your patience!
+- **`2025/10/15`**: 🚀🚀🚀 Our [paper](https://arxiv.org/abs/2510.12089) is in public on arxiv.
+
+
 ## 📸 Showcase
 ### Multi-Character Animation
 
@@ -123,14 +130,6 @@ Guangzhou Quwan Network Technology
 </table>
 
 Explore [more examples](https://playmate111.github.io/Playmate2/).
-
-## 📰 News
-
-[//]: # (- **`2025/05/07`**: 🎉🎉🎉 Super stoked to share that our paper has been accepted to [ICML 2025]&#40;https://icml.cc/Conferences/2025&#41;!)
-
-[//]: # (- **`2025/04/28`**: ✨✨✨ Created a GitHub repository for the project.)
-
-- **`2025/10/15`**: 🚀🚀🚀 Our [paper](https://arxiv.org/abs/2510.12089) is in public on arxiv.
 
 
 ## 📑 Todo List
