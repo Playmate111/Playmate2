@@ -25,6 +25,10 @@ Guangzhou Quwan Network Technology
   <a href='https://playmate111.github.io/Playmate2/'><img src='https://img.shields.io/badge/Project-HomePage-Green'></a>
 </div>
 
+<div align='Center'>
+    <i><strong><a href='https://aaai.org/conference/aaai/aaai-26/' target='_blank'>AAAI 2026</a></strong></i>
+</div>
+
 [//]: # (<div align='Center'>)
 
 [//]: # (    <i><strong><a href='https://icml.cc/Conferences/2025' target='_blank'>ICML 2025</a></strong></i>)
