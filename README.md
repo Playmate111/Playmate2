@@ -144,8 +144,8 @@ Explore [more examples](https://playmate111.github.io/Playmate2/).
 ```
 conda create -n playmate2 python=3.10
 conda activate playmate2
-pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu121
-pip install -U xformers==0.0.28 --index-url https://download.pytorch.org/whl/cu121
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
+pip install -U xformers==0.0.29 --index-url https://download.pytorch.org/whl/cu124
 ```
 #### 2. Flash-attn installation:
 ```
@@ -153,13 +153,12 @@ pip install misaki[en]
 pip install ninja 
 pip install psutil 
 pip install packaging 
-pip install flash_attn==2.7.4.post1
+pip install flash_attn==2.7.4.post1 --no-build-isolation
 ```
 
 #### 3. Other dependencies
 ```
 pip install -r requirements.txt
-conda install -c conda-forge librosa
 ```
 
 #### 4. FFmeg installation
@@ -173,7 +172,7 @@ sudo yum install ffmpeg ffmpeg-devel
 
 ### 🧱Model Preparation
 
-#### 1. Model Download
+#### Model Download
 
 | Models               | Download Link                                                               | Save Path                   |
 |----------------------|-----------------------------------------------------------------------------|-----------------------------|
@@ -184,9 +183,11 @@ sudo yum install ffmpeg ffmpeg-devel
 
 Download models using huggingface-cli:
 ``` sh
-huggingface-cli download Wan-AI/Wan2.1-I2V-14B-720P --local-dir ./weights/Wan2.1-I2V-14B-720P
-huggingface-cli download TencentGameMate/chinese-wav2vec2-base --local-dir ./weights/chinese-wav2vec2-base
-huggingface-cli download TencentGameMate/chinese-wav2vec2-base model.safetensors --revision refs/pr/1 --local-dir ./weights/chinese-wav2vec2-base
+mkdir pretrained_weights
+huggingface-cli download Wan-AI/Wan2.1-I2V-14B-720P --local-dir ./pretrained_weights/Wan2.1-I2V-14B-720P
+huggingface-cli download TencentGameMate/chinese-wav2vec2-base --local-dir ./pretrained_weights/chinese-wav2vec2-base
+huggingface-cli download TencentGameMate/chinese-wav2vec2-base model.safetensors --revision refs/pr/1 --local-dir ./pretrained_weights/chinese-wav2vec2-base
+huggingface-cli download DAMO-NLP-SG/VideoLLaMA3-7B --local-dir ./pretrained_weights/VideoLLaMA3-7B
 ```
 
 ## Inference
@@ -195,8 +196,8 @@ It is recommended to use an A100 or higher GPUs for inference.
 ```
 python inference.py \
     --gpu_num 1 \  # 1(single gpu) or 3(multiple gpus)
-    --image_path examples/images/0.png \
-    --audio_path examples/audios/0.wav \
+    --image_path examples/images/01.png \
+    --audio_path examples/audios/01.wav \
     --prompt_path examples/prompts/01.txt \
     --output_path examples/outputs/01.mp4 \
     --max_size 1280 \
@@ -208,13 +209,13 @@ python inference.py \
 # N represent the number of persons
 python inference.py \
     --gpu_num 1 \  # 1(single gpu) or 3+N-1(multiple gpus)
-    --image_path examples/images/03.png \
-    --audio_path examples/audios/03 \
-    --mask_path examples/masks/03 \
-    --prompt_path examples/prompts/03.txt \
-    --output_path examples/outputs/03.mp4 \
+    --image_path examples/images/04.png \
+    --audio_path examples/audios/04 \
+    --mask_path examples/masks/04 \
+    --prompt_path examples/prompts/04.txt \
+    --output_path examples/outputs/04.mp4 \
     --max_size 1280 \
-    --id_num N
+    --id_num 3
 ```
 
 ## 📑 Todo List
