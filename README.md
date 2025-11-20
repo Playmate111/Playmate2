@@ -238,18 +238,13 @@ python inference.py \
 
 If you find our work useful for your research, please consider citing the paper:
 
-[//]: # (```)
+```
 
-[//]: # (@article{ma2025playmate,)
+@article{ma2025playmate2,
+  title={Playmate2: Training-Free Multi-Character Audio-Driven Animation via Diffusion Transformer with Reward Feedback},
+  author={Ma, Xingpei and Huang, Shenneng and Cai, Jiaran and Guan, Yuansheng and Zheng, Shen and Zhao, Hanfeng and Zhang, Qiang and Zhang, Shunsi},
+  journal={arXiv preprint arXiv:2510.12089},
+  year={2025}
+}
 
-[//]: # (  title={Playmate: Flexible Control of Portrait Animation via 3D-Implicit Space Guided Diffusion},)
-
-[//]: # (  author={Ma, Xingpei and Cai, Jiaran and Guan, Yuansheng and Huang, Shenneng and Zhang, Qiang and Zhang, Shunsi},)
-
-[//]: # (  journal={arXiv preprint arXiv:2502.07203},)
-
-[//]: # (  year={2025})
-
-[//]: # (})
-
-[//]: # (```)
+```
