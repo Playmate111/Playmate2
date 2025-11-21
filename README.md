@@ -45,7 +45,7 @@ Guangzhou Quwan Network Technology
 
 ## 📰 News
 
-- **`2025/11/21`**: 🔥🔥 We release the [weights](https://huggingface.co/PlaymateAI/Playmate2) and inference code of **Playmate2** 
+- **`2025/11/21`**: 🔥🔥🔥 We release the [weights](https://huggingface.co/PlaymateAI/Playmate2) and inference code of **Playmate2**!
 - **`2025/11/10`**: 🎉🎉🎉 Our [paper](https://arxiv.org/abs/2510.12089) has been accepted and will be presented at [AAAI 2026](https://aaai.org/conference/aaai/aaai-26/). We plan to release the inference code and model weights for both [**Playmate**](https://github.com/Playmate111/Playmate) and [**Playmate2**](https://github.com/Playmate111/Playmate2) in the coming weeks. Stay tuned and thank you for your patience!
 - **`2025/10/15`**: 🚀🚀🚀 Our [paper](https://arxiv.org/abs/2510.12089) is in public on arxiv.
 
