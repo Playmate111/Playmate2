@@ -45,6 +45,7 @@ Guangzhou Quwan Network Technology
 
 ## 📰 News
 
+- **`2025/11/21`**: 🔥🔥 We release the [weights](https://huggingface.co/PlaymateAI/Playmate2) and inference code of **Playmate2** 
 - **`2025/11/10`**: 🎉🎉🎉 Our [paper](https://arxiv.org/abs/2510.12089) has been accepted and will be presented at [AAAI 2026](https://aaai.org/conference/aaai/aaai-26/). We plan to release the inference code and model weights for both [**Playmate**](https://github.com/Playmate111/Playmate) and [**Playmate2**](https://github.com/Playmate111/Playmate2) in the coming weeks. Stay tuned and thank you for your patience!
 - **`2025/10/15`**: 🚀🚀🚀 Our [paper](https://arxiv.org/abs/2510.12089) is in public on arxiv.
 
@@ -174,12 +175,12 @@ sudo yum install ffmpeg ffmpeg-devel
 
 #### Model Download
 
-| Models               | Download Link                                                               | Save Path                   |
-|----------------------|-----------------------------------------------------------------------------|-----------------------------|
-| Wan2.1-I2V-14B-720P  | [Huggingface](https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P)            | pretrained_weights/Wan2.1-I2V-14B-720P                  
+| Models               | Download Link                                                      | Save Path                   |
+|----------------------|--------------------------------------------------------------------|-----------------------------|
+| Wan2.1-I2V-14B-720P  | [Huggingface](https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P)   | pretrained_weights/Wan2.1-I2V-14B-720P                  
 | chinese-wav2vec2-base | [Huggingface](https://huggingface.co/TencentGameMate/chinese-wav2vec2-base) | pretrained_weights/chinese-wav2vec2-base               
-| VideoLLaMA3-7B       | [Huggingface](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA3-7B)            | pretrained_weights/VideoLLaMA3-7B                 
-| Our Pretrained Model | [Huggingface](hf link)                                   | pretrained_weights/playmate2 
+| VideoLLaMA3-7B       | [Huggingface](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA3-7B)   | pretrained_weights/VideoLLaMA3-7B                 
+| Our Pretrained Model | [Huggingface](https://huggingface.co/PlaymateAI/Playmate2)  | pretrained_weights/playmate2 
 
 Download models using huggingface-cli:
 ``` sh
@@ -188,6 +189,7 @@ huggingface-cli download Wan-AI/Wan2.1-I2V-14B-720P --local-dir ./pretrained_wei
 huggingface-cli download TencentGameMate/chinese-wav2vec2-base --local-dir ./pretrained_weights/chinese-wav2vec2-base
 huggingface-cli download TencentGameMate/chinese-wav2vec2-base model.safetensors --revision refs/pr/1 --local-dir ./pretrained_weights/chinese-wav2vec2-base
 huggingface-cli download DAMO-NLP-SG/VideoLLaMA3-7B --local-dir ./pretrained_weights/VideoLLaMA3-7B
+huggingface-cli download PlaymateAI/Playmate2 --local-dir ./pretrained_weights/playmate2
 ```
 
 ## Inference
